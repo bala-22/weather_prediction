@@ -1,0 +1,22 @@
+{
+  "total_days": 182,
+  "predicted_rain_days": 58,
+  "actual_rain_days": 51,
+  "true_positives": 48,
+  "true_negatives": 121,
+  "false_positives": 10,
+  "false_negatives": 3,
+  "accuracy": 0.9286,
+  "precision": 0.8276,
+  "recall": 0.9412,
+  "f1_score": 0.8807,
+  "rain_prediction_percentage": 31.9,
+  "actual_rain_percentage": 28.0,
+  "confusion_matrix": {
+    "tp": 48,
+    "tn": 121,
+    "fp": 10,
+    "fn": 3
+  },
+  "model_name": "RandomForest"
+}

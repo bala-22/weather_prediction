@@ -1,0 +1,184 @@
+date,location,temperature,min_temperature,max_temperature,humidity,rainfall,pressure,wind_speed,cloud_cover,weather_condition
+2026-02-19,Tiruchirappalli,28.5,20.3,36.8,72.0,0.0,1014.3,7.3,13.1,Clear
+2026-02-20,Tiruchirappalli,25.2,18.3,37.2,80.8,0.0,1014.7,5.8,33.8,Clear
+2026-02-21,Tiruchirappalli,27.7,21.5,36.3,73.1,0.0,1015.5,5.5,56.7,Partly Cloudy
+2026-02-22,Tiruchirappalli,27.6,18.4,36.9,84.7,0.0,1014.4,9.8,71.3,Overcast
+2026-02-23,Tiruchirappalli,21.8,21.2,37.1,72.0,0.0,1014.7,10.1,29.3,Clear
+2026-02-24,Tiruchirappalli,24.0,18.8,38.1,72.9,0.0,1010.7,14.6,46.6,Partly Cloudy
+2026-02-25,Tiruchirappalli,25.9,20.8,37.1,84.7,0.0,1011.1,13.4,34.9,Clear
+2026-02-26,Tiruchirappalli,26.3,21.9,36.6,48.4,0.0,1013.0,8.3,24.0,Clear
+2026-02-27,Tiruchirappalli,26.7,20.6,39.8,76.7,0.0,1011.9,1.6,18.5,Clear
+2026-02-28,Tiruchirappalli,25.0,20.2,36.4,68.4,0.0,1012.0,9.0,46.0,Partly Cloudy
+2026-03-01,Tiruchirappalli,29.9,19.2,41.7,77.5,0.0,1007.6,16.9,68.1,Partly Cloudy
+2026-03-02,Tiruchirappalli,32.8,19.7,40.1,65.1,0.0,1012.8,10.5,29.9,Clear
+2026-03-03,Tiruchirappalli,26.9,21.1,38.4,74.7,0.0,1011.9,9.2,32.2,Clear
+2026-03-04,Tiruchirappalli,28.2,20.5,40.8,80.4,0.0,1011.6,2.0,43.7,Partly Cloudy
+2026-03-05,Tiruchirappalli,30.5,22.2,38.1,56.8,0.0,1011.9,16.1,44.5,Partly Cloudy
+2026-03-06,Tiruchirappalli,31.7,21.3,38.2,80.5,0.0,1014.0,5.1,55.7,Partly Cloudy
+2026-03-07,Tiruchirappalli,32.3,19.8,41.4,74.1,0.0,1007.4,10.7,12.6,Clear
+2026-03-08,Tiruchirappalli,28.5,22.3,39.6,82.1,0.0,1011.6,8.7,94.4,Overcast
+2026-03-09,Tiruchirappalli,31.3,19.7,38.4,74.8,0.0,1009.6,13.7,31.0,Clear
+2026-03-10,Tiruchirappalli,31.6,22.6,39.5,60.7,0.0,1008.5,10.9,47.7,Partly Cloudy
+2026-03-11,Tiruchirappalli,28.2,21.2,40.1,58.6,0.0,1012.6,15.3,20.8,Clear
+2026-03-12,Tiruchirappalli,32.8,22.4,39.1,73.0,0.0,1010.8,12.6,100.0,Overcast
+2026-03-13,Tiruchirappalli,31.1,22.7,41.4,76.5,0.0,1006.5,2.5,43.3,Partly Cloudy
+2026-03-14,Tiruchirappalli,28.3,20.9,39.2,52.1,0.0,1011.1,7.6,61.8,Partly Cloudy
+2026-03-15,Tiruchirappalli,30.1,19.4,38.9,76.8,0.0,1017.2,19.2,67.3,Partly Cloudy
+2026-03-16,Tiruchirappalli,31.7,21.0,40.7,80.5,0.0,1008.1,6.0,37.7,Clear
+2026-03-17,Tiruchirappalli,31.0,22.3,38.2,66.7,0.0,1011.0,1.9,58.9,Partly Cloudy
+2026-03-18,Tiruchirappalli,32.5,21.6,42.5,56.7,0.0,1015.5,16.3,25.8,Clear
+2026-03-19,Tiruchirappalli,30.9,22.2,38.6,69.4,0.0,1006.1,9.5,0.1,Clear
+2026-03-20,Tiruchirappalli,27.4,23.3,42.0,68.7,0.0,1008.6,15.8,40.2,Partly Cloudy
+2026-03-21,Tiruchirappalli,28.0,21.7,40.3,79.0,8.2,1011.9,10.6,32.1,Heavy Rain
+2026-03-22,Tiruchirappalli,32.6,20.1,43.2,76.9,0.0,1010.2,11.4,27.5,Clear
+2026-03-23,Tiruchirappalli,29.6,20.3,39.1,78.5,0.0,1012.9,17.3,47.2,Partly Cloudy
+2026-03-24,Tiruchirappalli,31.2,20.1,41.3,75.5,0.0,1007.9,9.9,42.3,Partly Cloudy
+2026-03-25,Tiruchirappalli,32.6,20.1,40.8,68.0,0.0,1014.7,7.8,31.8,Clear
+2026-03-26,Tiruchirappalli,30.5,21.0,41.4,64.8,0.0,1012.8,11.6,37.4,Clear
+2026-03-27,Tiruchirappalli,30.2,21.9,38.8,90.9,0.0,1013.6,4.0,55.4,Fog
+2026-03-28,Tiruchirappalli,31.3,20.0,40.0,49.1,0.0,1015.3,5.9,33.6,Clear
+2026-03-29,Tiruchirappalli,30.8,20.2,38.8,87.4,3.6,1008.7,11.0,81.2,Moderate Rain
+2026-03-30,Tiruchirappalli,31.7,22.7,39.3,78.4,2.5,1014.1,11.6,99.5,Moderate Rain
+2026-03-31,Tiruchirappalli,31.7,20.8,40.0,60.0,0.0,1008.0,9.8,65.4,Partly Cloudy
+2026-04-01,Tiruchirappalli,33.5,23.7,41.1,53.5,0.0,1005.5,11.1,40.3,Partly Cloudy
+2026-04-02,Tiruchirappalli,32.2,21.8,41.0,73.0,0.0,1006.7,19.3,64.0,Partly Cloudy
+2026-04-03,Tiruchirappalli,35.6,22.8,42.5,53.5,0.0,1010.4,0.6,29.5,Clear
+2026-04-04,Tiruchirappalli,30.5,23.2,41.5,86.8,0.0,1009.7,14.9,54.8,Fog
+2026-04-05,Tiruchirappalli,35.0,24.1,40.8,67.3,0.0,1007.2,1.4,67.1,Partly Cloudy
+2026-04-06,Tiruchirappalli,31.8,24.9,38.6,77.0,1.7,1008.8,11.5,100.0,Light Rain
+2026-04-07,Tiruchirappalli,32.6,22.5,38.6,54.3,0.0,1009.6,2.3,65.6,Partly Cloudy
+2026-04-08,Tiruchirappalli,32.7,21.9,43.3,69.2,0.0,1008.5,15.8,60.5,Partly Cloudy
+2026-04-09,Tiruchirappalli,32.3,21.5,40.6,82.9,0.0,1010.6,15.3,4.8,Clear
+2026-04-10,Tiruchirappalli,29.6,19.9,40.6,75.2,0.0,1006.5,16.7,59.6,Partly Cloudy
+2026-04-11,Tiruchirappalli,32.7,23.0,42.2,65.2,0.0,1003.0,0.3,38.2,Clear
+2026-04-12,Tiruchirappalli,29.4,24.0,41.5,58.6,0.0,1010.2,8.5,81.1,Overcast
+2026-04-13,Tiruchirappalli,31.4,22.3,40.3,74.8,1.7,1006.3,9.5,49.3,Light Rain
+2026-04-14,Tiruchirappalli,30.9,21.2,43.9,83.4,0.6,1009.5,16.0,87.0,Light Rain
+2026-04-15,Tiruchirappalli,30.8,21.9,41.9,62.5,0.0,1004.3,2.4,67.3,Partly Cloudy
+2026-04-16,Tiruchirappalli,35.3,22.6,41.9,71.1,0.0,1005.1,10.4,70.5,Overcast
+2026-04-17,Tiruchirappalli,27.1,21.8,39.6,66.1,0.0,1007.9,6.8,18.4,Clear
+2026-04-18,Tiruchirappalli,35.4,24.3,41.0,97.8,20.0,1015.1,15.1,61.2,Heavy Rain
+2026-04-19,Tiruchirappalli,35.2,22.4,40.0,82.0,0.0,1004.1,3.0,51.3,Partly Cloudy
+2026-04-20,Tiruchirappalli,30.7,22.3,40.1,59.4,0.0,1000.5,13.4,47.8,Partly Cloudy
+2026-04-21,Tiruchirappalli,31.8,23.4,41.4,60.8,0.0,1006.4,10.5,55.0,Partly Cloudy
+2026-04-22,Tiruchirappalli,28.7,23.8,40.0,73.7,0.0,1008.8,3.7,30.8,Clear
+2026-04-23,Tiruchirappalli,31.4,20.7,42.2,56.6,0.0,1008.8,6.7,40.9,Partly Cloudy
+2026-04-24,Tiruchirappalli,30.3,22.4,42.5,62.2,0.0,1011.3,13.9,25.5,Clear
+2026-04-25,Tiruchirappalli,36.9,20.3,39.5,69.7,0.0,1008.3,10.4,36.9,Clear
+2026-04-26,Tiruchirappalli,34.3,23.4,41.5,63.9,0.0,1007.0,8.4,50.9,Partly Cloudy
+2026-04-27,Tiruchirappalli,34.1,19.7,41.5,65.3,0.0,1010.8,0.2,19.8,Clear
+2026-04-28,Tiruchirappalli,28.3,22.5,41.0,84.8,0.0,1007.3,14.1,57.8,Partly Cloudy
+2026-04-29,Tiruchirappalli,32.2,21.7,41.4,69.7,0.0,1009.7,11.7,31.7,Clear
+2026-04-30,Tiruchirappalli,33.3,26.4,41.3,70.5,0.0,1004.7,5.9,70.2,Overcast
+2026-05-01,Tiruchirappalli,31.8,21.5,42.2,100.0,9.9,1004.7,13.8,51.6,Heavy Rain
+2026-05-02,Tiruchirappalli,32.7,24.0,41.6,100.0,13.3,1002.8,7.4,73.4,Heavy Rain
+2026-05-03,Tiruchirappalli,32.7,20.7,37.5,76.8,0.0,1013.9,10.5,54.5,Partly Cloudy
+2026-05-04,Tiruchirappalli,32.0,22.3,39.8,79.7,0.0,1002.0,19.4,43.7,Partly Cloudy
+2026-05-05,Tiruchirappalli,31.2,21.9,42.2,100.0,0.0,1007.6,9.2,31.5,Fog
+2026-05-06,Tiruchirappalli,29.0,19.5,42.2,75.7,0.0,1009.8,5.9,9.9,Clear
+2026-05-07,Tiruchirappalli,30.5,20.3,40.8,74.9,0.0,1002.0,8.8,53.9,Partly Cloudy
+2026-05-08,Tiruchirappalli,34.7,23.7,40.6,78.9,0.2,1006.0,10.8,56.4,Light Rain
+2026-05-09,Tiruchirappalli,31.3,20.8,42.0,88.9,37.9,1006.5,9.8,59.1,Heavy Rain
+2026-05-10,Tiruchirappalli,29.6,22.2,40.6,90.0,0.0,999.8,3.8,16.4,Fog
+2026-05-11,Tiruchirappalli,31.4,22.4,40.6,88.5,19.3,1007.6,4.4,100.0,Heavy Rain
+2026-05-12,Tiruchirappalli,32.9,23.9,42.1,78.7,2.6,1006.3,9.3,80.0,Moderate Rain
+2026-05-13,Tiruchirappalli,28.9,21.5,40.7,83.1,0.0,1003.2,8.2,63.2,Partly Cloudy
+2026-05-14,Tiruchirappalli,28.8,22.9,41.9,86.9,2.2,1001.0,18.8,45.2,Light Rain
+2026-05-15,Tiruchirappalli,29.4,24.0,38.4,82.6,0.0,1001.8,0.4,73.9,Overcast
+2026-05-16,Tiruchirappalli,31.4,21.9,40.2,79.0,0.0,1008.9,9.8,33.3,Clear
+2026-05-17,Tiruchirappalli,33.7,25.2,42.0,68.8,0.0,1004.7,10.1,47.0,Partly Cloudy
+2026-05-18,Tiruchirappalli,29.9,20.8,41.3,80.2,2.2,1012.0,13.6,60.6,Light Rain
+2026-05-19,Tiruchirappalli,32.1,24.4,43.4,65.0,0.0,1007.5,0.8,14.4,Clear
+2026-05-20,Tiruchirappalli,29.8,22.0,41.8,82.7,3.9,1001.7,12.9,39.5,Moderate Rain
+2026-05-21,Tiruchirappalli,29.4,24.0,39.7,80.7,0.0,1000.7,12.5,43.7,Partly Cloudy
+2026-05-22,Tiruchirappalli,29.3,23.1,40.1,76.2,0.0,1000.9,14.9,33.0,Clear
+2026-05-23,Tiruchirappalli,31.5,22.3,40.5,94.8,0.0,1005.9,13.5,28.8,Fog
+2026-05-24,Tiruchirappalli,32.3,23.5,41.9,59.3,0.0,1002.0,8.9,61.3,Partly Cloudy
+2026-05-25,Tiruchirappalli,31.2,23.2,41.9,87.9,0.0,1009.2,9.6,6.8,Fog
+2026-05-26,Tiruchirappalli,31.9,22.3,41.4,62.2,0.0,1007.3,8.9,62.6,Partly Cloudy
+2026-05-27,Tiruchirappalli,30.8,21.3,42.3,60.9,0.0,1007.5,11.1,30.4,Clear
+2026-05-28,Tiruchirappalli,33.5,20.7,40.7,70.6,0.0,1004.0,15.2,57.4,Partly Cloudy
+2026-05-29,Tiruchirappalli,31.6,20.0,41.9,82.1,0.0,1006.1,7.4,68.2,Partly Cloudy
+2026-05-30,Tiruchirappalli,35.6,21.5,40.3,89.5,0.0,1003.4,14.0,34.0,Fog
+2026-05-31,Tiruchirappalli,29.4,20.5,39.4,55.7,0.0,1002.4,14.9,35.7,Clear
+2026-06-01,Tiruchirappalli,32.9,28.0,36.3,58.8,0.0,1008.5,18.1,8.6,Clear
+2026-06-02,Tiruchirappalli,33.1,26.2,37.1,60.6,0.0,1003.1,17.1,28.6,Clear
+2026-06-03,Tiruchirappalli,31.3,27.7,37.2,76.3,6.5,1012.1,14.7,53.2,Moderate Rain
+2026-06-04,Tiruchirappalli,33.3,26.5,38.9,60.4,0.0,1008.3,9.1,24.0,Clear
+2026-06-05,Tiruchirappalli,30.2,25.9,38.0,87.9,4.9,1007.1,4.7,0.4,Moderate Rain
+2026-06-06,Tiruchirappalli,31.3,28.8,38.5,68.2,0.0,1001.6,12.9,32.8,Clear
+2026-06-07,Tiruchirappalli,34.2,28.7,39.2,60.1,0.0,1008.0,17.7,27.0,Clear
+2026-06-08,Tiruchirappalli,34.0,26.4,36.7,48.1,0.0,1006.5,10.1,65.6,Partly Cloudy
+2026-06-09,Tiruchirappalli,33.4,27.1,36.0,62.5,0.0,1009.5,11.1,45.3,Partly Cloudy
+2026-06-10,Tiruchirappalli,32.2,27.8,38.1,67.1,0.0,1000.7,7.8,43.9,Partly Cloudy
+2026-06-11,Tiruchirappalli,35.1,25.5,38.2,63.0,3.0,1003.6,10.6,77.3,Moderate Rain
+2026-06-12,Tiruchirappalli,31.9,26.8,34.9,62.3,0.0,1008.2,2.8,0.0,Clear
+2026-06-13,Tiruchirappalli,33.9,26.2,36.5,77.1,8.2,1008.4,16.6,65.6,Heavy Rain
+2026-06-14,Tiruchirappalli,30.7,26.8,38.9,57.7,1.3,1010.0,9.8,74.9,Light Rain
+2026-06-15,Tiruchirappalli,32.5,27.5,36.1,69.4,0.0,1006.5,9.9,45.4,Partly Cloudy
+2026-06-16,Tiruchirappalli,32.5,28.1,39.1,59.6,0.0,1006.8,11.0,54.2,Partly Cloudy
+2026-06-17,Tiruchirappalli,32.8,29.2,37.0,88.0,3.0,1002.8,9.9,38.2,Moderate Rain
+2026-06-18,Tiruchirappalli,34.1,26.0,39.5,67.2,4.0,1004.9,7.7,21.5,Moderate Rain
+2026-06-19,Tiruchirappalli,29.8,28.1,39.2,59.3,0.0,1004.9,7.1,34.7,Clear
+2026-06-20,Tiruchirappalli,32.2,30.6,38.0,75.2,5.3,1010.3,11.0,29.2,Moderate Rain
+2026-06-21,Tiruchirappalli,32.5,26.0,36.5,52.2,0.0,1008.0,13.1,30.1,Clear
+2026-06-22,Tiruchirappalli,32.1,27.4,36.8,73.1,0.0,1006.1,14.5,52.7,Partly Cloudy
+2026-06-23,Tiruchirappalli,35.1,26.2,40.0,57.0,0.0,1006.2,20.9,32.6,Clear
+2026-06-24,Tiruchirappalli,33.4,25.5,37.2,61.2,0.0,1008.4,18.6,48.7,Partly Cloudy
+2026-06-25,Tiruchirappalli,33.1,27.2,38.9,59.8,13.3,1008.3,9.4,88.7,Heavy Rain
+2026-06-26,Tiruchirappalli,34.7,24.2,36.6,39.4,0.0,1011.0,15.4,39.2,Clear
+2026-06-27,Tiruchirappalli,32.7,28.3,39.0,39.2,0.0,1006.6,3.7,67.5,Partly Cloudy
+2026-06-28,Tiruchirappalli,34.6,27.6,37.0,58.2,0.0,1004.1,12.7,32.6,Clear
+2026-06-29,Tiruchirappalli,34.5,22.7,39.7,52.6,1.9,1006.1,9.6,86.1,Light Rain
+2026-06-30,Tiruchirappalli,30.5,28.7,36.9,39.4,0.0,1004.2,10.4,14.3,Clear
+2026-07-01,Tiruchirappalli,34.0,26.3,35.7,50.7,0.0,1003.5,12.6,56.9,Partly Cloudy
+2026-07-02,Tiruchirappalli,34.4,28.8,37.9,58.6,0.0,1009.9,8.7,36.1,Clear
+2026-07-03,Tiruchirappalli,31.9,26.9,39.1,70.5,3.4,1005.6,4.8,66.2,Moderate Rain
+2026-07-04,Tiruchirappalli,32.9,26.1,38.0,56.4,0.0,1007.4,15.0,0.0,Clear
+2026-07-05,Tiruchirappalli,36.2,26.8,39.7,59.6,4.2,1006.8,6.7,91.5,Moderate Rain
+2026-07-06,Tiruchirappalli,31.7,27.8,36.6,54.7,0.0,1012.0,11.0,61.0,Partly Cloudy
+2026-07-07,Tiruchirappalli,34.2,28.8,39.0,58.6,0.2,1003.7,11.5,90.1,Light Rain
+2026-07-08,Tiruchirappalli,31.5,27.5,40.2,60.6,0.0,1007.1,15.9,15.4,Clear
+2026-07-09,Tiruchirappalli,33.2,28.1,37.6,68.8,0.0,1006.4,4.9,14.4,Clear
+2026-07-10,Tiruchirappalli,28.7,25.7,40.3,54.5,4.4,1005.1,18.2,90.2,Moderate Rain
+2026-07-11,Tiruchirappalli,30.6,30.4,39.5,51.8,0.0,1004.6,9.9,16.9,Clear
+2026-07-12,Tiruchirappalli,28.9,29.2,35.3,78.3,0.0,1008.2,13.0,57.1,Partly Cloudy
+2026-07-13,Tiruchirappalli,33.5,27.4,38.2,69.4,0.9,1005.4,12.8,69.3,Light Rain
+2026-07-14,Tiruchirappalli,30.1,25.7,36.5,64.7,0.0,1004.1,14.6,8.6,Clear
+2026-07-15,Tiruchirappalli,30.0,28.4,36.5,67.8,0.3,1003.1,12.8,100.0,Light Rain
+2026-07-16,Tiruchirappalli,32.4,27.2,36.6,69.0,0.0,1005.8,10.6,31.4,Clear
+2026-07-17,Tiruchirappalli,32.2,27.8,38.1,70.4,14.0,1007.5,3.5,93.0,Heavy Rain
+2026-07-18,Tiruchirappalli,31.4,26.6,39.1,77.5,15.8,1003.9,8.5,95.0,Heavy Rain
+2026-07-19,Tiruchirappalli,30.7,27.4,36.7,76.5,0.0,1007.6,6.3,32.9,Clear
+2026-07-20,Tiruchirappalli,32.9,28.8,40.4,54.6,7.8,1006.8,9.6,100.0,Heavy Rain
+2026-07-21,Tiruchirappalli,30.4,29.5,40.5,49.5,0.0,1006.9,7.3,7.5,Clear
+2026-07-22,Tiruchirappalli,33.1,25.3,36.9,49.1,0.0,1005.4,11.2,8.9,Clear
+2026-07-23,Tiruchirappalli,32.7,28.3,35.0,73.7,1.7,1008.1,19.7,64.8,Light Rain
+2026-07-24,Tiruchirappalli,35.5,27.1,37.0,45.1,0.0,1007.9,9.4,21.9,Clear
+2026-07-25,Tiruchirappalli,30.5,28.9,39.6,61.1,0.0,1004.4,3.0,41.5,Partly Cloudy
+2026-07-26,Tiruchirappalli,33.6,27.1,39.8,47.5,0.0,1006.7,10.7,37.0,Clear
+2026-07-27,Tiruchirappalli,33.4,28.4,36.8,56.7,0.5,1006.3,13.5,53.0,Light Rain
+2026-07-28,Tiruchirappalli,28.8,30.2,36.3,63.4,0.0,1006.1,10.4,38.0,Clear
+2026-07-29,Tiruchirappalli,33.8,26.6,38.4,58.2,0.0,1004.5,8.8,16.2,Clear
+2026-07-30,Tiruchirappalli,31.3,25.4,40.0,55.5,0.0,1006.5,9.9,56.4,Partly Cloudy
+2026-07-31,Tiruchirappalli,34.8,27.8,38.0,56.9,5.4,1004.9,5.0,80.2,Moderate Rain
+2026-08-01,Tiruchirappalli,32.1,24.3,39.0,48.1,3.3,1007.9,4.0,82.0,Moderate Rain
+2026-08-02,Tiruchirappalli,35.1,28.8,39.7,91.9,0.7,1005.3,7.9,62.7,Light Rain
+2026-08-03,Tiruchirappalli,30.6,27.5,39.1,62.2,0.0,1004.8,12.2,63.8,Partly Cloudy
+2026-08-04,Tiruchirappalli,33.9,24.8,36.2,86.3,3.9,1006.6,14.9,59.9,Moderate Rain
+2026-08-05,Tiruchirappalli,29.7,28.8,39.5,85.8,0.2,1009.3,7.1,18.2,Light Rain
+2026-08-06,Tiruchirappalli,30.9,27.6,37.8,78.8,13.7,1004.0,9.8,30.8,Heavy Rain
+2026-08-07,Tiruchirappalli,36.1,25.2,39.9,88.7,1.7,1004.4,3.1,37.7,Light Rain
+2026-08-08,Tiruchirappalli,34.9,26.7,39.0,72.4,0.0,1002.2,8.0,38.2,Clear
+2026-08-09,Tiruchirappalli,33.8,29.1,41.8,64.8,0.0,1009.4,10.2,24.9,Clear
+2026-08-10,Tiruchirappalli,32.9,26.0,43.0,78.4,6.2,1007.7,7.7,54.0,Moderate Rain
+2026-08-11,Tiruchirappalli,34.6,25.5,38.0,83.8,2.1,1010.5,15.9,84.4,Light Rain
+2026-08-12,Tiruchirappalli,34.0,25.9,37.9,92.0,4.2,1007.8,5.4,82.8,Moderate Rain
+2026-08-13,Tiruchirappalli,34.4,26.1,40.1,76.6,0.0,1012.4,12.7,61.5,Partly Cloudy
+2026-08-14,Tiruchirappalli,31.3,25.7,38.4,57.3,4.5,1008.7,10.7,60.3,Moderate Rain
+2026-08-15,Tiruchirappalli,31.3,27.3,39.8,48.6,0.0,1009.7,9.2,45.7,Partly Cloudy
+2026-08-16,Tiruchirappalli,31.5,29.4,40.7,69.3,0.0,1003.9,12.5,46.5,Partly Cloudy
+2026-08-17,Tiruchirappalli,32.1,26.9,39.9,85.1,1.2,1008.7,16.2,70.4,Light Rain
+2026-08-18,Tiruchirappalli,32.6,29.6,40.4,100.0,20.0,1012.4,13.1,76.6,Heavy Rain
+2026-08-19,Tiruchirappalli,33.8,26.1,40.7,74.5,8.5,1006.9,9.0,53.0,Heavy Rain
+2026-08-20,Tiruchirappalli,30.8,27.9,42.5,65.9,0.0,1005.5,4.4,45.6,Partly Cloudy

@@ -1,0 +1,156 @@
+[
+  {
+    "total_days": 9,
+    "predicted_rain_days": 0,
+    "actual_rain_days": 0,
+    "true_positives": 0,
+    "true_negatives": 9,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "accuracy": 1.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "rain_prediction_percentage": 0.0,
+    "actual_rain_percentage": 0.0,
+    "confusion_matrix": {
+      "tp": 0,
+      "tn": 9,
+      "fp": 0,
+      "fn": 0
+    },
+    "month": "2026-02"
+  },
+  {
+    "total_days": 31,
+    "predicted_rain_days": 2,
+    "actual_rain_days": 3,
+    "true_positives": 2,
+    "true_negatives": 28,
+    "false_positives": 0,
+    "false_negatives": 1,
+    "accuracy": 0.9677,
+    "precision": 1.0,
+    "recall": 0.6667,
+    "f1_score": 0.8,
+    "rain_prediction_percentage": 6.5,
+    "actual_rain_percentage": 9.7,
+    "confusion_matrix": {
+      "tp": 2,
+      "tn": 28,
+      "fp": 0,
+      "fn": 1
+    },
+    "month": "2026-03"
+  },
+  {
+    "total_days": 30,
+    "predicted_rain_days": 4,
+    "actual_rain_days": 4,
+    "true_positives": 4,
+    "true_negatives": 26,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "rain_prediction_percentage": 13.3,
+    "actual_rain_percentage": 13.3,
+    "confusion_matrix": {
+      "tp": 4,
+      "tn": 26,
+      "fp": 0,
+      "fn": 0
+    },
+    "month": "2026-04"
+  },
+  {
+    "total_days": 31,
+    "predicted_rain_days": 15,
+    "actual_rain_days": 9,
+    "true_positives": 9,
+    "true_negatives": 16,
+    "false_positives": 6,
+    "false_negatives": 0,
+    "accuracy": 0.8065,
+    "precision": 0.6,
+    "recall": 1.0,
+    "f1_score": 0.75,
+    "rain_prediction_percentage": 48.4,
+    "actual_rain_percentage": 29.0,
+    "confusion_matrix": {
+      "tp": 9,
+      "tn": 16,
+      "fp": 6,
+      "fn": 0
+    },
+    "month": "2026-05"
+  },
+  {
+    "total_days": 30,
+    "predicted_rain_days": 10,
+    "actual_rain_days": 10,
+    "true_positives": 10,
+    "true_negatives": 20,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "rain_prediction_percentage": 33.3,
+    "actual_rain_percentage": 33.3,
+    "confusion_matrix": {
+      "tp": 10,
+      "tn": 20,
+      "fp": 0,
+      "fn": 0
+    },
+    "month": "2026-06"
+  },
+  {
+    "total_days": 31,
+    "predicted_rain_days": 11,
+    "actual_rain_days": 12,
+    "true_positives": 10,
+    "true_negatives": 18,
+    "false_positives": 1,
+    "false_negatives": 2,
+    "accuracy": 0.9032,
+    "precision": 0.9091,
+    "recall": 0.8333,
+    "f1_score": 0.8696,
+    "rain_prediction_percentage": 35.5,
+    "actual_rain_percentage": 38.7,
+    "confusion_matrix": {
+      "tp": 10,
+      "tn": 18,
+      "fp": 1,
+      "fn": 2
+    },
+    "month": "2026-07"
+  },
+  {
+    "total_days": 20,
+    "predicted_rain_days": 16,
+    "actual_rain_days": 13,
+    "true_positives": 13,
+    "true_negatives": 4,
+    "false_positives": 3,
+    "false_negatives": 0,
+    "accuracy": 0.85,
+    "precision": 0.8125,
+    "recall": 1.0,
+    "f1_score": 0.8966,
+    "rain_prediction_percentage": 80.0,
+    "actual_rain_percentage": 65.0,
+    "confusion_matrix": {
+      "tp": 13,
+      "tn": 4,
+      "fp": 3,
+      "fn": 0
+    },
+    "month": "2026-08"
+  }
+]
