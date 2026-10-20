@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Home - Weather Prediction System{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Weather Prediction System</h1>
+        <p class="hero-subtitle"></p>
+        <p class="hero-description">
+            An intelligent weather forecasting system leveraging machine learning algorithms
+            to predict rainfall and analyze weather patterns for Tiruchirappalli district.
+        </p>
+    </div>
+</section>
+
+{% if error %}
+<div class="alert alert-error">
+    <strong>Error:</strong> {{ error }}
+</div>
+{% endif %}
+
+<section class="features-section">
+    <h2 class="section-title"><i data-lucide="layout-grid"></i> Features</h2>
+    <div class="feature-cards">
+        <a href="/analysis" class="feature-card">
+            <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+            <h3>Past 6-Month Weather Analysis</h3>
+            <p>Analyze past 6 months of Tiruchirappalli weather data with ML model evaluation metrics including accuracy, precision, recall, and F1-score.</p>
+        </a>
+        <a href="/prediction" class="feature-card">
+            <div class="feature-icon"><i data-lucide="cloud-rain"></i></div>
+            <h3>Next 1-Week Prediction</h3>
+            <p>Get 7-day weather forecasts for any Tiruchirappalli sub-area using our trained machine learning model.</p>
+        </a>
+        <a href="/about" class="feature-card">
+            <div class="feature-icon"><i data-lucide="brain"></i></div>
+            <h3>ML Methodology</h3>
+            <p>Learn about the machine learning algorithms, features, and evaluation methodology used in this project.</p>
+        </a>
+    </div>
+</section>
+{% endblock %}

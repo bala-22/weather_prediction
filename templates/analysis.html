@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% block title %}6-Month Analysis - Weather Prediction System{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Past 6-Month Weather Analysis</h1>
+    <p>Tiruchirappalli &mdash; Machine Learning Model Evaluation &amp; Meteorological Synthesis</p>
+</section>
+
+<div id="loading-indicator" class="loading">
+    <div class="spinner"></div>
+    <p>Loading analysis data...</p>
+</div>
+
+<div id="error-message" class="alert alert-error" style="display:none;"></div>
+
+<div id="analysis-content" style="display:none;">
+
+    <!-- Analysis Period -->
+    <div class="period-info">
+        <span class="period-chip">
+            <i data-lucide="calendar-range" style="width:15px;height:15px;"></i>
+            <span class="period-chip-label">Period</span>
+            <span class="period-chip-value"><span id="period-start">--</span> &ndash; <span id="period-end">--</span></span>
+        </span>
+        <span class="period-chip">
+            <i data-lucide="calendar-days" style="width:15px;height:15px;"></i>
+            <span class="period-chip-label">Total</span>
+            <span class="period-chip-value"><span id="period-total">--</span> days</span>
+        </span>
+    </div>
+
+    <!-- Dashboard Metric Cards -->
+    <section class="dashboard-cards-section">
+        <h2><i data-lucide="gauge"></i> Model Performance Dashboard</h2>
+        <div class="dashboard-cards">
+            <div class="dash-card">
+                <div class="dash-card-value" id="a-total">--</div>
+                <div class="dash-card-label">Total Days</div>
+            </div>
+            <div class="dash-card card-rain">
+                <div class="dash-card-value" id="a-predicted">--</div>
+                <div class="dash-card-label">Predicted Rain Days</div>
+            </div>
+            <div class="dash-card card-rain">
+                <div class="dash-card-value" id="a-actual">--</div>
+                <div class="dash-card-label">Actual Rain Days</div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-value" id="a-rain-pct">--</div>
+                <div class="dash-card-label">Rain Prediction %</div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-value" id="a-actual-pct">--</div>
+                <div class="dash-card-label">Actual Rain %</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confusion Matrix -->
+    <section class="metrics-table-section">
+        <h2><i data-lucide="grid-3x3"></i> Confusion Matrix</h2>
+        <div class="cm-wrapper">
+            <div class="cm-visual">
+                <div class="cm-corner">Predicted &rarr;<br>Actual &darr;</div>
+                <div class="cm-header cm-col-rain">Rain</div>
+                <div class="cm-header cm-col-norain">No Rain</div>
+
+                <div class="cm-row-label cm-row-rain">Rain</div>
+                <div class="cm-cell cm-tp" id="cm-tp">
+                    <span class="cm-value">--</span>
+                    <span class="cm-label">True Positive (TP)</span>
+                    <span class="cm-pct"></span>
+                </div>
+                <div class="cm-cell cm-fn-cell" id="cm-fn">
+                    <span class="cm-value">--</span>
+                    <span class="cm-label">False Negative (FN)</span>
+                    <span class="cm-pct"></span>
+                </div>
+
+                <div class="cm-row-label cm-row-norain">No Rain</div>
+                <div class="cm-cell cm-fp-cell" id="cm-fp">
+                    <span class="cm-value">--</span>
+                    <span class="cm-label">False Positive (FP)</span>
+                    <span class="cm-pct"></span>
+                </div>
+                <div class="cm-cell cm-tn" id="cm-tn">
+                    <span class="cm-value">--</span>
+                    <span class="cm-label">True Negative (TN)</span>
+                    <span class="cm-pct"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Failed Predictions Reason Analysis -->
+    <section class="failure-analysis-section">
+        <h2><i data-lucide="alert-triangle"></i> Failed Predictions &mdash; Reason Analysis</h2>
+        <div class="failure-summary" id="failure-summary"></div>
+        <div class="table-responsive">
+            <table class="data-table" id="failure-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Error Type</th>
+                        <th>Temp (&deg;C)</th>
+                        <th>Humidity (%)</th>
+                        <th>Rain (mm)</th>
+                        <th>Cloud (%)</th>
+                        <th>Weather Condition</th>
+                        <th>Atmospheric Reason</th>
+                    </tr>
+                </thead>
+                <tbody id="failure-tbody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Weather Charts -->
+    <section class="charts-section">
+        <h2><i data-lucide="trending-up"></i> Weather Charts &amp; Seasonal Trends</h2>
+
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Actual vs Predicted Rain Days (Monthly)</h3>
+                <canvas id="chart-rain-comparison"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Monthly Rainfall (mm)</h3>
+                <canvas id="chart-monthly-rainfall"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Monthly Average Temperature (&deg;C)</h3>
+                <canvas id="chart-monthly-temp"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Daily Temperature Range Trend</h3>
+                <canvas id="chart-temperature"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Daily Humidity Trend (%)</h3>
+                <canvas id="chart-humidity"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Daily Rainfall Distribution (mm)</h3>
+                <canvas id="chart-rainfall-trend"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Monthly Breakdown Table -->
+    <section class="monthly-analysis-section">
+        <h2><i data-lucide="table-2"></i> Monthly Breakdown</h2>
+        <div class="table-responsive">
+            <table class="data-table" id="monthly-table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Season / Climate Context</th>
+                        <th>Total Days</th>
+                        <th>Actual Rain</th>
+                        <th>Predicted Rain</th>
+                        <th>Prediction Match %</th>
+                        <th>Total Rain (mm)</th>
+                        <th>Avg Temp (&deg;C)</th>
+                        <th>Avg Humidity (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="monthly-tbody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/analysis.js') }}?v=3"></script>
+{% endblock %}

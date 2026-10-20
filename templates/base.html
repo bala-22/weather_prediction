@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>{% block title %}Weather Prediction System{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1724240000">
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <i data-lucide="cloud-sun" class="brand-icon"></i>
+                <span class="brand-text">WeatherML</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/analysis" class="nav-link {% if request.path == '/analysis' %}active{% endif %}">
+                    <i data-lucide="bar-chart-3"></i>
+                    <span>6-Month Analysis</span>
+                </a>
+                <a href="/prediction" class="nav-link {% if request.path == '/prediction' %}active{% endif %}">
+                    <i data-lucide="cloud-rain"></i>
+                    <span>1-Week Prediction</span>
+                </a>
+                <a href="/about" class="nav-link {% if request.path == '/about' %}active{% endif %}">
+                    <i data-lucide="info"></i>
+                    <span>About</span>
+                </a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <i data-lucide="sun" class="icon-sun"></i>
+                <i data-lucide="moon" class="icon-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Weather Prediction System &middot; Tiruchirappalli</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        var navToggle = document.getElementById('nav-toggle');
+        var navLinks = document.getElementById('nav-links');
+        if (navToggle) {
+            navToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('open');
+            });
+        }
+
+        var themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function () {
+                var current = document.documentElement.getAttribute('data-theme');
+                var next = current === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+
+                /* re-init lucide icons so sun/moon swap renders */
+                lucide.createIcons();
+
+                /* re-render charts with new theme colors if on chart pages */
+                if (typeof window.updateChartTheme === 'function') {
+                    window.updateChartTheme(next);
+                }
+            });
+        }
+    </script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

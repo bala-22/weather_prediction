@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}Next 1-Week Prediction - Weather Prediction System{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Next 1-Week Weather Prediction</h1>
+    <p>Tiruchirappalli Sub-Area Forecast &mdash; Machine Learning Based</p>
+</section>
+
+<section class="area-selector-section">
+    <h2><i data-lucide="map-pin"></i> Select Sub-Area</h2>
+    <div class="area-selector">
+        <select id="area-select" class="form-select">
+            <option value="">-- Select an area --</option>
+            {% for area in areas %}
+            <option value="{{ area }}">{{ area }}</option>
+            {% endfor %}
+        </select>
+        <button id="predict-btn" class="btn btn-primary" disabled>
+            <i data-lucide="cloud-rain"></i> Get 7-Day Forecast
+        </button>
+    </div>
+</section>
+
+<div id="prediction-loading" class="loading" style="display:none;">
+    <div class="spinner"></div>
+    <p>Generating predictions...</p>
+</div>
+
+<div id="prediction-error" class="alert alert-error" style="display:none;"></div>
+
+<div id="prediction-content" style="display:none;">
+
+    <section class="prediction-summary">
+        <h2><i data-lucide="cloud-sun"></i> 7-Day Forecast Summary for <span id="selected-area"></span></h2>
+        <div class="dashboard-cards">
+            <div class="dash-card">
+                <div class="dash-card-value" id="p-min-temp">--</div>
+                <div class="dash-card-label">Min Temperature (&deg;C)</div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-value" id="p-max-temp">--</div>
+                <div class="dash-card-label">Max Temperature (&deg;C)</div>
+            </div>
+            <div class="dash-card card-rain">
+                <div class="dash-card-value" id="p-avg-temp">--</div>
+                <div class="dash-card-label">Avg Temperature (&deg;C)</div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-value" id="p-humidity">--</div>
+                <div class="dash-card-label">Avg Humidity (%)</div>
+            </div>
+            <div class="dash-card card-rain">
+                <div class="dash-card-value" id="p-rainfall">--</div>
+                <div class="dash-card-label">Total Rainfall (mm)</div>
+            </div>
+            <div class="dash-card">
+                <div class="dash-card-value" id="p-wind">--</div>
+                <div class="dash-card-label">Avg Wind Speed (m/s)</div>
+            </div>
+            <div class="dash-card card-success">
+                <div class="dash-card-value" id="p-rain-prob">--</div>
+                <div class="dash-card-label">Avg Rain Probability (%)</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prediction-table-section">
+        <h2><i data-lucide="table-2"></i> 7-Day Detailed Forecast</h2>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Temp (&deg;C)</th>
+                        <th>Min (&deg;C)</th>
+                        <th>Max (&deg;C)</th>
+                        <th>Humidity (%)</th>
+                        <th>Wind (m/s)</th>
+                        <th>Rainfall (mm)</th>
+                        <th>Weather Condition</th>
+                        <th>Rain Prob (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="prediction-tbody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="charts-section">
+        <h2><i data-lucide="trending-up"></i> Forecast Charts</h2>
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Rain Probability for Next 7 Days</h3>
+                <canvas id="chart-rain-prob"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>7-Day Temperature Forecast</h3>
+                <canvas id="chart-temp-forecast"></canvas>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/prediction.js') }}?v=2"></script>
+{% endblock %}

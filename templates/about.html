@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+{% block title %}About - Weather Prediction System{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>About This Project</h1>
+    <p>Weather Prediction System</p>
+</section>
+
+<section class="about-section">
+    <div class="about-card">
+        <h2><i data-lucide="target"></i> Project Objective</h2>
+        <p>
+            This project aims to build an intelligent weather forecasting system specifically
+            designed for <strong>Tiruchirappalli (Trichy)</strong>.
+            The system leverages machine learning algorithms to analyze historical weather
+            patterns and predict future weather conditions, with a focus on rainfall
+            prediction which is critical for agriculture, water management, and daily life
+            in the region.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="cpu"></i> Machine Learning Methodology</h2>
+        <div class="methodology-grid">
+            <div class="method-step">
+                <h3>1. Data Collection</h3>
+                <p>
+                    Historical weather data is collected for Tiruchirappalli covering
+                    temperature, humidity, rainfall, pressure, wind speed, and cloud cover.
+                    Data sources include OpenWeatherMap API and preprocessed sample datasets
+                    based on real climate patterns for the region.
+                </p>
+            </div>
+            <div class="method-step">
+                <h3>2. Data Cleaning</h3>
+                <p>
+                    Raw data undergoes cleaning to remove duplicates, validate ranges
+                    appropriate for Tiruchirappalli's climate, and handle outliers.
+                    Missing values are addressed using time-series interpolation methods.
+                </p>
+            </div>
+            <div class="method-step">
+                <h3>3. Feature Engineering</h3>
+                <p>
+                    Additional features are derived from raw data including temporal
+                    features (day of year, month, season), lag features (previous day
+                    values), and rolling averages (3-day and 7-day windows).
+                </p>
+            </div>
+            <div class="method-step">
+                <h3>4. Model Training</h3>
+                <p>
+                    Multiple classification models are trained and compared:
+                    <strong>Random Forest</strong>, <strong>Logistic Regression</strong>,
+                    and <strong>XGBoost</strong> (if available). The best performing model
+                    is selected and saved for predictions.
+                </p>
+            </div>
+            <div class="method-step">
+                <h3>5. Model Evaluation</h3>
+                <p>
+                    The model is evaluated on a held-out test set using accuracy, precision,
+                    recall, F1-score, and confusion matrix analysis. All metrics are computed
+                    from actual test predictions &mdash; no fabricated accuracy values.
+                </p>
+            </div>
+            <div class="method-step">
+                <h3>6. Prediction</h3>
+                <p>
+                    The trained model is used to predict rain/no-rain for each sub-area
+                    in Tiruchirappalli. Predictions are compared against actual historical
+                    observations for evaluation.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="database"></i> Dataset</h2>
+        <p>
+            The dataset contains weather observations for Tiruchirappalli covering the
+            past 6 months. Each record includes:
+        </p>
+        <ul>
+            <li>Temperature (average, minimum, maximum) in degrees Celsius</li>
+            <li>Humidity (%)</li>
+            <li>Rainfall (mm)</li>
+            <li>Atmospheric pressure (hPa)</li>
+            <li>Wind speed (m/s)</li>
+            <li>Cloud cover (%)</li>
+            <li>Weather condition description</li>
+        </ul>
+        <p>
+            <strong>Note:</strong> When the OpenWeatherMap API is configured, the system
+            fetches real data. Otherwise, it uses a sample dataset generated from
+            Tiruchirappalli's actual climate statistics &mdash; clearly labeled as sample data.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="list-checks"></i> Features Used for ML Model</h2>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>temperature</td><td>Average temperature in Celsius</td></tr>
+                    <tr><td>min_temperature</td><td>Minimum temperature in Celsius</td></tr>
+                    <tr><td>max_temperature</td><td>Maximum temperature in Celsius</td></tr>
+                    <tr><td>humidity</td><td>Relative humidity percentage</td></tr>
+                    <tr><td>rainfall</td><td>Rainfall amount in mm</td></tr>
+                    <tr><td>pressure</td><td>Atmospheric pressure in hPa</td></tr>
+                    <tr><td>wind_speed</td><td>Wind speed in m/s</td></tr>
+                    <tr><td>cloud_cover</td><td>Cloud cover percentage</td></tr>
+                    <tr><td>day_of_year</td><td>Day number within the year</td></tr>
+                    <tr><td>month</td><td>Month of the year (1-12)</td></tr>
+                    <tr><td>day_of_week</td><td>Day of the week (0-6)</td></tr>
+                    <tr><td>season</td><td>Season category (0-3)</td></tr>
+                    <tr><td>temp_range</td><td>Daily temperature range (max-min)</td></tr>
+                    <tr><td>prev_temperature</td><td>Previous day temperature</td></tr>
+                    <tr><td>prev_humidity</td><td>Previous day humidity</td></tr>
+                    <tr><td>prev_rainfall</td><td>Previous day rainfall</td></tr>
+                    <tr><td>prev_wind_speed</td><td>Previous day wind speed</td></tr>
+                    <tr><td>temp_3day_avg</td><td>3-day rolling average temperature</td></tr>
+                    <tr><td>humidity_3day_avg</td><td>3-day rolling average humidity</td></tr>
+                    <tr><td>rainfall_3day_sum</td><td>3-day rolling sum of rainfall</td></tr>
+                    <tr><td>temp_7day_avg</td><td>7-day rolling average temperature</td></tr>
+                    <tr><td>humidity_7day_avg</td><td>7-day rolling average humidity</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="git-compare"></i> Algorithms Compared</h2>
+        <div class="table-responsive">
+            <table class="data-table" id="algo-comparison-table">
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Accuracy</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1-Score</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="algo-tbody">
+                    <tr><td colspan="6" style="text-align:center;">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note" id="algo-note"></p>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="trophy"></i> Best Algorithm: <span id="best-algo-name">--</span></h2>
+        <div id="best-algo-desc"></div>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="calculator"></i> Evaluation Metrics</h2>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Formula</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Accuracy</td>
+                        <td>(TP + TN) / (TP + TN + FP + FN)</td>
+                        <td>Overall correctness of predictions</td>
+                    </tr>
+                    <tr>
+                        <td>Precision</td>
+                        <td>TP / (TP + FP)</td>
+                        <td>Of predicted rain days, how many actually had rain</td>
+                    </tr>
+                    <tr>
+                        <td>Recall</td>
+                        <td>TP / (TP + FN)</td>
+                        <td>Of actual rain days, how many were correctly predicted</td>
+                    </tr>
+                    <tr>
+                        <td>F1-Score</td>
+                        <td>2 * (Precision * Recall) / (Precision + Recall)</td>
+                        <td>Harmonic mean of precision and recall</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">
+            <strong>Rain Classification Threshold:</strong> A day is classified as "Rain"
+            if rainfall &ge; 0.1 mm. This threshold is configurable in the application settings.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="layers"></i> Technologies Used</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <h4>Backend</h4>
+                <p>Python 3, Flask 3, Jinja2</p>
+            </div>
+            <div class="tech-item">
+                <h4>Machine Learning</h4>
+                <p>scikit-learn : (Random Forest, Logistic Regression, XGBoost) </p>
+            </div>
+            <div class="tech-item">
+                <h4>Data Processing</h4>
+                <p>pandas, NumPy</p>
+            </div>
+            <div class="tech-item">
+                <h4>Frontend</h4>
+                <p>HTML5, CSS3, Vanilla JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <h4>Visualization</h4>
+                <p>Chart.js 4, Lucide Icons</p>
+            </div>
+            <div class="tech-item">
+                <h4>Weather Data</h4>
+                <p>Open-Meteo API, OpenWeatherMap API (optional)</p>
+            </div>
+            <div class="tech-item">
+                <h4>Model Persistence</h4>
+                <p>Joblib</p>
+            </div>
+            <div class="tech-item">
+                <h4>Database</h4>
+                <p>PostgreSQL</p>
+            </div>
+            <div class="tech-item">
+                <h4>Data Storage</h4>
+                <p>CSV &amp; JSON files</p>
+            </div>
+            <div class="tech-item">
+                <h4>HTTP Client</h4>
+                <p>Requests, python-dotenv</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-card">
+        <h2><i data-lucide="map"></i> Tiruchirappalli Sub-Areas</h2>
+        <p>
+            The system provides localized predictions for the following sub-areas
+            within Tiruchirappalli:
+        </p>
+        <div class="area-grid">
+            <span class="area-tag">Srirangam</span>
+            <span class="area-tag">Thillai Nagar</span>
+            <span class="area-tag">Cantonment</span>
+            <span class="area-tag">Woraiyur</span>
+            <span class="area-tag">KK Nagar</span>
+            <span class="area-tag">Tennur</span>
+            <span class="area-tag">Thiruverumbur</span>
+            <span class="area-tag">Manachanallur</span>
+            <span class="area-tag">Samayapuram</span>
+            <span class="area-tag">Lalgudi</span>
+            <span class="area-tag">Musiri</span>
+            <span class="area-tag">Manapparai</span>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    lucide.createIcons();
+    fetch('/api/model-comparison')
+        .then(function (r) { return r.json(); })
+        .then(function (resp) {
+            if (!resp.success) return;
+            var data = resp.data;
+            var models = data.models;
+            var best = data.best_model;
+
+            var algoDescs = {
+                'RandomForest': 'An ensemble learning method that constructs multiple decision trees during training. Output is the mode of classes predicted by individual trees. Handles non-linear relationships well and is robust to overfitting.',
+                'LogisticRegression': 'A linear model for binary classification that uses the logistic sigmoid function to map predictions to probabilities. Provides interpretable coefficients and serves as a strong baseline.',
+                'XGBoost': 'An optimized gradient boosting library implementing machine learning algorithms under the gradient boosting framework. Often achieves state-of-the-art results on structured data.',
+
+            };
+
+            var tbody = document.getElementById('algo-tbody');
+            tbody.innerHTML = '';
+            var keys = Object.keys(models);
+            keys.forEach(function (name) {
+                var m = models[name];
+                var isBest = name === best;
+                var cls = isBest ? ' class="best-algo-row"' : '';
+                var badge = isBest
+                    ? '<span class="best-badge">BEST</span>'
+                    : '<span class="other-badge">&mdash;</span>';
+                var row = '<tr' + cls + '>'
+                    + '<td><strong>' + name + '</strong></td>'
+                    + '<td>' + (m.accuracy * 100).toFixed(2) + '%</td>'
+                    + '<td>' + (m.precision * 100).toFixed(2) + '%</td>'
+                    + '<td>' + (m.recall * 100).toFixed(2) + '%</td>'
+                    + '<td>' + (m.f1_score * 100).toFixed(2) + '%</td>'
+                    + '<td>' + badge + '</td>'
+                    + '</tr>';
+                tbody.innerHTML += row;
+            });
+
+            document.getElementById('algo-note').innerHTML =
+                '<strong>Selection criteria:</strong> Algorithm with highest test accuracy was chosen. '
+                + best + ' won with ' + (models[best].accuracy * 100).toFixed(2) + '% accuracy.';
+
+            document.getElementById('best-algo-name').textContent = best;
+            document.getElementById('best-algo-desc').innerHTML =
+                '<p>' + (algoDescs[best] || '') + '</p>'
+                + '<ul>'
+                + '<li><strong>Accuracy:</strong> ' + (models[best].accuracy * 100).toFixed(2) + '%</li>'
+                + '<li><strong>Precision:</strong> ' + (models[best].precision * 100).toFixed(2) + '%</li>'
+                + '<li><strong>Recall:</strong> ' + (models[best].recall * 100).toFixed(2) + '%</li>'
+                + '<li><strong>F1-Score:</strong> ' + (models[best].f1_score * 100).toFixed(2) + '%</li>'
+                + '</ul>';
+        });
+});
+</script>
+{% endblock %}
