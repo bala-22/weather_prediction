@@ -196,10 +196,10 @@ Open `http://localhost:5000` in your browser.
 
 **Rain Classification**: A day is "Rain" if rainfall >= 0.1 mm (configurable in config.py)
 
-![weather prediction](<img width="702" height="442" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/0c37a7ec-e6ce-4229-a746-c6bf62a776ca" />
-.png)
 
 
+<img src="<img width="652" height="362" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/ef2f7b4c-7e26-4375-8601-094228651f05" />
+.png" width="300">
 
 
 
