@@ -200,7 +200,7 @@ Open `http://localhost:5000` in your browser.
 
 <p align="center">
   <img src="<img width="652" height="362" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/690f19af-12df-4ec5-821c-c96848f5346b" />
-.png" width="200">
+.png" width="300">
 </p>
 
 
