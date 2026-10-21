@@ -205,6 +205,16 @@ Open `http://localhost:5000` in your browser.
 
 
 
+
+
+
+
+
+
+
+
+
+
 ## How the 1-Week Prediction Works
 
 1. User selects a Tiruchirappalli sub-area from the dropdown
