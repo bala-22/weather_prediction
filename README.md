@@ -193,6 +193,7 @@ Open `http://localhost:5000` in your browser.
    - **FP** (False Positive): Model predicted rain, actual was no rain
    - **FN** (False Negative): Model predicted no rain, actual was rain
 7. **Metrics**: Accuracy, Precision, Recall, F1-Score are calculated from the confusion matrix
+
 **Rain Classification**: A day is "Rain" if rainfall >= 0.1 mm (configurable in config.py)
 
 ![weather prediction](<img width="702" height="442" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/0c37a7ec-e6ce-4229-a746-c6bf62a776ca" />
