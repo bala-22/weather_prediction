@@ -1,4 +1,4 @@
-# Weather Prediction System
+# Weather Prediction System.
 
 An intelligent weather forecasting system for **Tiruchirappalli** that uses machine learning algorithms to predict rainfall and analyze weather patterns.
 
