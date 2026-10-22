@@ -236,4 +236,7 @@ New areas can be added by updating the `SUB_AREAS` dictionary in `config.py`.
 
 ## License
 
-Academic project - MCA Final Year Project
+## 📄 License
+
+This project is licensed under the MIT License.
+
