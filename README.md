@@ -196,9 +196,9 @@ Open `http://localhost:5000` in your browser.
 
 **Rain Classification**: A day is "Rain" if rainfall >= 0.1 mm (configurable in config.py)
 
-<p align="center" >
-<img width="400" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/d2e78b23-ae48-4b20-9e5c-083117bd2dc7" >
-</p>
+
+<img width="400" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/d2e78b23-ae48-4b20-9e5c-083117bd2dc7" />
+
 
 ## How the 1-Week Prediction Works
 
