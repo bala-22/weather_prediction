@@ -234,8 +234,6 @@ New areas can be added by updating the `SUB_AREAS` dictionary in `config.py`.
 | Port already in use | Change port in `app.py` or stop other applications on port 5000 |
 | `Model not found` | Run `python ml/train_model.py` to train and save the model |
 
-## License
-
 ## 📄 License
 
 This project is licensed under the MIT License.
